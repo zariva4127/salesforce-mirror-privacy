@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Privacy Policy for the Salesforce Mirror Chrome extension.">
+  <title>Salesforce Mirror Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #f6f8fb;
+      --surface: #ffffff;
+      --text: #172033;
+      --muted: #566176;
+      --border: #dce2eb;
+      --accent: #1769e0;
+      --accent-soft: #eaf2ff;
+      --shadow: 0 18px 50px rgba(31, 45, 72, 0.09);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #0c111b;
+        --surface: #141b28;
+        --text: #eef3fc;
+        --muted: #abb6c9;
+        --border: #2b3546;
+        --accent: #7bb0ff;
+        --accent-soft: #172b49;
+        --shadow: none;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    main {
+      width: min(860px, calc(100% - 32px));
+      margin: 48px auto;
+      padding: clamp(28px, 6vw, 64px);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    header {
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h1, h2 { line-height: 1.25; }
+    h1 { margin: 0 0 8px; font-size: clamp(2rem, 5vw, 3rem); }
+    h2 { margin: 36px 0 10px; font-size: 1.3rem; }
+    p, ul { margin: 10px 0; }
+    ul { padding-left: 1.4rem; }
+    li + li { margin-top: 7px; }
+    a { color: var(--accent); }
+
+    .meta { color: var(--muted); }
+
+    .summary {
+      margin-top: 26px;
+      padding: 18px 20px;
+      background: var(--accent-soft);
+      border-left: 4px solid var(--accent);
+      border-radius: 10px;
+    }
+
+    footer {
+      margin-top: 42px;
+      padding-top: 22px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.93rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Salesforce Mirror Privacy Policy</h1>
+      <p class="meta"><strong>Effective date:</strong> October 2, 2026</p>
+      <p class="meta"><strong>Last updated:</strong> October 2, 2026</p>
+      <div class="summary">
+        Salesforce Mirror works locally in your browser and communicates directly with Salesforce at your request. We do not operate a server that receives your Salesforce data, and we do not sell user data or use it for advertising.
+      </div>
+    </header>
+
+    <h2>1. About this policy</h2>
+    <p>
+      This Privacy Policy explains how the Salesforce Mirror Chrome extension (the “Extension”) accesses, uses, stores, and shares information. The Extension provides a browser-based workspace for authorized users to inspect and manage Salesforce code, metadata, records, tests, debug logs, and APIs.
+    </p>
+
+    <h2>2. Information the Extension handles</h2>
+    <p>The Extension may handle the following categories of information when you use its features:</p>
+    <ul>
+      <li><strong>Identifiers:</strong> Salesforce username, display name, user ID, organization ID, organization name, and Salesforce domain.</li>
+      <li><strong>Authentication information:</strong> Salesforce OAuth access tokens, optional refresh tokens, or a Salesforce browser-session cookie selected by the user.</li>
+      <li><strong>Salesforce content:</strong> code, metadata, object schemas, records returned by user-initiated queries, Apex test results, code coverage, debug logs, API request and response content, and deployment or validation results.</li>
+      <li><strong>User-provided content:</strong> local log files, pasted log text, code drafts, API request drafts, settings, and other content that you intentionally open, enter, or create in the Extension.</li>
+      <li><strong>Connection and preference data:</strong> saved Salesforce organization profiles, interface preferences, recent-item references, and locally cached workspace information.</li>
+    </ul>
+    <p>
+      The Extension does not intentionally collect health information, financial or payment information, precise location, general browsing history, keystroke logs, or advertising profiles.
+    </p>
+
+    <h2>3. How information is used</h2>
+    <p>Information is used only to provide features requested by the user, including:</p>
+    <ul>
+      <li>authenticating with and maintaining a connection to a selected Salesforce organization;</li>
+      <li>retrieving, displaying, searching, formatting, and locally analyzing Salesforce information;</li>
+      <li>running user-requested queries, tests, validations, deployments, metadata operations, and API requests;</li>
+      <li>saving preferences, drafts, workspace state, and recent-item references on the user's device; and</li>
+      <li>diagnosing errors and showing Salesforce API results to the user.</li>
+    </ul>
+    <p>
+      Debug-log explanations and other built-in analysis are produced locally in the browser. Log contents are not sent to an artificial-intelligence service.
+    </p>
+
+    <h2>4. Authentication</h2>
+    <p>
+      The Extension can connect through Salesforce OAuth using Chrome's identity API or, when the user explicitly selects an authenticated Salesforce tab, by using that tab's Salesforce session. Authentication credentials are used only to communicate with the selected Salesforce organization.
+    </p>
+    <p>
+      Access tokens and browser-session credentials are kept in Chrome session storage and are cleared when the applicable browser session ends or the user disconnects. If the user enables the option to remember an OAuth connection, an OAuth refresh token may be stored in the Extension's local Chrome storage so the connection can survive a browser restart. Browser-session cookies are not persistently copied into local extension storage.
+    </p>
+
+    <h2>5. Local storage and retention</h2>
+    <p>
+      The Extension stores preferences, organization profiles, drafts, caches, workspace state, and limited recent-item information locally using browser-provided storage and IndexedDB. Retention depends on the applicable feature and the user's settings. Users can remove stored information through the Extension's settings and disconnect controls, by clearing the Extension's site data in Chrome, or by uninstalling the Extension.
+    </p>
+    <p>
+      Salesforce content that remains in the user's Salesforce organization is controlled by the user and Salesforce and is subject to the organization's own configuration and retention policies.
+    </p>
+
+    <h2>6. Network communications and disclosure</h2>
+    <p>
+      The production Extension has no developer-operated backend. Network requests initiated by its Salesforce features are sent directly from the user's browser to Salesforce over HTTPS. When a user deliberately uses the REST API Explorer with another endpoint, the request is sent directly to the endpoint chosen by that user.
+    </p>
+    <p>
+      We do not sell or rent user data. We do not transfer user data to advertising platforms, data brokers, or analytics providers. Information may be disclosed only when directed by the user through an Extension feature, when necessary to communicate with Salesforce or another endpoint explicitly selected by the user, or when required by applicable law.
+    </p>
+
+    <h2>7. Analytics and advertising</h2>
+    <p>
+      The Extension does not contain advertising and does not use analytics, tracking pixels, behavioral profiling, or telemetry services. Information handled by the Extension is not used for personalized advertising, creditworthiness, lending, or other unrelated purposes.
+    </p>
+
+    <h2>8. Data security</h2>
+    <p>
+      The Extension uses HTTPS for supported network communications, requests only the browser permissions needed for its features, and restricts extension pages to packaged executable code. Nevertheless, no method of electronic storage or transmission can be guaranteed to be completely secure. Users should connect only to Salesforce organizations and API endpoints they trust and should follow their organization's security policies.
+    </p>
+
+    <h2>9. User choices and deletion</h2>
+    <p>Users can control or remove information handled by the Extension by:</p>
+    <ul>
+      <li>disconnecting a Salesforce organization;</li>
+      <li>disabling remembered OAuth connections;</li>
+      <li>clearing drafts, history, caches, or other locally saved data in the Extension;</li>
+      <li>revoking the Extension's access from Salesforce; or</li>
+      <li>clearing the Extension's Chrome storage or uninstalling it.</li>
+    </ul>
+
+    <h2>10. Children's privacy</h2>
+    <p>
+      The Extension is a professional Salesforce development tool and is not directed to children. We do not knowingly collect personal information from children.
+    </p>
+
+    <h2>11. Changes to this policy</h2>
+    <p>
+      This policy may be updated when the Extension's features or data practices change. Material changes will be reflected on this page by updating the “Last updated” date. Data practices disclosed in the Chrome Web Store listing will be updated when required.
+    </p>
+
+    <h2>12. Chrome Web Store Limited Use</h2>
+    <p>
+      The use of information received from Chrome APIs complies with the Chrome Web Store User Data Policy, including the Limited Use requirements. Information is used only as necessary to provide or improve the Extension's prominent user-facing features and is not used for advertising or transferred for unrelated purposes.
+    </p>
+
+    <h2>13. Contact</h2>
+    <p>
+      For privacy questions, requests, or concerns about Salesforce Mirror, contact
+      <a href="mailto:zariva.stores@gmail.com">zariva.stores@gmail.com</a>.
+    </p>
+
+    <footer>
+      <p>Salesforce Mirror is an independent tool and is not affiliated with, endorsed by, or sponsored by Salesforce, Inc. Salesforce and related marks belong to their respective owners.</p>
+    </footer>
+  </main>
+</body>
+</html>
